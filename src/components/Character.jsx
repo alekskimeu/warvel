@@ -9,7 +9,7 @@ const Character = ({ character }) => {
 	return (
 		<>
 			<div
-				className="cursor-pointer group border border-white rounded-xl mb-5 bg-white hover:border-gray-300 drop-shadow-xl transition ease-in-out delay-150 duration-500 hover:drop-shadow-2xl"
+				className="cursor-pointer group border border-white rounded-xl mb-10 bg-white hover:border-gray-300 drop-shadow-xl transition ease-in-out delay-150 duration-500 hover:drop-shadow-2xl"
 				onClick={() => setShow(true)}
 			>
 				<div className="h-72 overflow-hidden rounded-t-xl">

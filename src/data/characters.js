@@ -10,42 +10,42 @@ export const characters = [
 	},
 	{
 		id: 2,
-		name: "Alex Kimeu",
+		name: "Stephen Odipo",
 		img: image,
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
 	},
 	{
 		id: 3,
-		name: "Alex Kimeu",
+		name: "Tom Mwaka",
 		img: image,
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
 	},
 	{
 		id: 4,
-		name: "Alex Kimeu",
+		name: "Vinny Kabda",
 		img: image,
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
 	},
 	{
 		id: 5,
-		name: "Alex Kimeu",
+		name: "Gee Mwangi",
 		img: image,
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
 	},
 	{
 		id: 6,
-		name: "Alex Kimeu",
+		name: "Lorraine Nkatha",
 		img: image,
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
 	},
 	{
 		id: 7,
-		name: "Alex Kimeu",
+		name: "Losute Gladys",
 		img: image,
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",

@@ -20,12 +20,12 @@ a,
 button,
 span {
 	line-height: 1.6;
-	letter-spacing: 1.6px;
+	letter-spacing: 2px;
 }
 
 .hero {
 	min-height: 55vh;
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
 		url("../src/assets/images/hero.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -44,6 +44,21 @@ span {
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
+}
+
+.character-info {
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.9)
+	);
+}
+
+.details {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 .description {

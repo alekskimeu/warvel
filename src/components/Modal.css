@@ -6,6 +6,7 @@
 	height: 100%;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 1;
+	padding: 2rem;
 }
 
 .modal-main {
@@ -64,7 +65,7 @@
 
 .modal-main .modal-header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	align-items: center;
 	gap: 2rem;
 	margin-bottom: 2rem;
@@ -72,11 +73,10 @@
 
 .modal-main .modal-header > i {
 	cursor: pointer;
-	color: var(--danger);
 	font-size: 1.5rem;
 }
 
-.modal-main .modal-header .title {
+.modal-main .title {
 	text-transform: uppercase;
 	font-weight: 500;
 	display: flex;
@@ -87,7 +87,7 @@
 .modal-main .body {
 	display: flex;
 	align-items: center;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .modal-main .body .image-container {
@@ -123,5 +123,16 @@
 @media screen and (max-width: 1000px) {
 	.modal-main .body {
 		flex-direction: column;
+		text-align: center;
+	}
+
+	.modal-main .body img {
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.modal-main {
+		padding: 1rem;
 	}
 }

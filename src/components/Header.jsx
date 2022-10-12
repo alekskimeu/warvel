@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { links } from "../data/links";
 
 const Header = () => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -11,52 +12,34 @@ const Header = () => {
 		? "fas fa-close fa-2x"
 		: "fas fa-bars fa-2x";
 
-	const right = showMobileMenu ? "0" : "-100%";
+	const right = showMobileMenu ? "0" : "100%";
 
 	return (
-		<header className="fixed top-0 z-10 w-full py-2 h-20 bg-current">
-			<div className="container mx-auto h-full flex justify-between items-center gap-10 md:px-3">
+		<header className="fixed top-0 z-10 w-full h-20 bg-current">
+			<div className="container mx-auto h-full flex justify-between items-center gap-10">
 				<Link
 					to="/"
-					className="text-2xl pl-5 font-bold text-gray-200"
+					className="text-xl md:text-2xl lg:text-3xl px-5 rounded-sm font-extrabold bg-[#ec1d24] text-white h-full w-100 flex items-center"
 					onClick={() => hideMobileMenu()}
 				>
-					Zaka
+					ZAKA
 				</Link>
 				<nav
 					className={`flex flex-col absolute right-[${right}] top-20 bg-current p-3 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end`}
 				>
-					<Link
-						to="/"
-						className="text-gray-200 font-semibold text-sm uppercase"
-						onClick={() => hideMobileMenu()}
-					>
-						Characters
-					</Link>
-					<Link
-						to="#"
-						className="text-gray-200 font-semibold text-sm uppercase"
-						onClick={() => hideMobileMenu()}
-					>
-						Comics
-					</Link>
-					<Link
-						to="#"
-						className="text-gray-200 font-semibold text-sm uppercase"
-						onClick={() => hideMobileMenu()}
-					>
-						Shows
-					</Link>
-					<Link
-						to="#"
-						className="text-gray-200 font-semibold text-sm uppercase"
-						onClick={() => hideMobileMenu()}
-					>
-						Quotes
-					</Link>
+					{links.map((link) => (
+						<Link
+							key={link.id}
+							to={link.url}
+							className="text-gray-300 font-semibold text-sm uppercase hover:text-[#ec1d24] transition ease-in-out delay-150 duration-500"
+							onClick={() => hideMobileMenu()}
+						>
+							{link.name}
+						</Link>
+					))}
 				</nav>
 				<i
-					className={`text-gray-400 cursor-pointer md:hidden ${iconClassName} pr-5`}
+					className={`text-gray-400 cursor-pointer md:hidden ${iconClassName} pr-5 md:pr-2`}
 					onClick={() => toggleMobileMenu()}
 				></i>
 			</div>

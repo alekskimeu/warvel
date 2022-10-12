@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Modal from "./Modal";
 
 const Character = ({ character }) => {
 	const [show, setShow] = useState(false);
+
+	useEffect(() => {
+		AOS.init();
+	});
 
 	const handleClose = () => setShow(false);
 
@@ -10,9 +17,10 @@ const Character = ({ character }) => {
 		<>
 			<div
 				className="relative cursor-pointer group rounded-lg overflow-hidden drop-shadow-xl transition ease-in-out delay-150 duration-500 hover:drop-shadow-2xl"
-				onClick={() => setShow(true)}
+				data-aos="zoom-in"
+				data-aos-duration="1200"
 			>
-				<div className="h-72 overflow-hidden rounded-lg">
+				<div className="h-60 overflow-hidden rounded-lg">
 					<img
 						// src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
 						src={character.img}
@@ -25,8 +33,11 @@ const Character = ({ character }) => {
 						<h1 className="text-xl font-semibold mb-2 text-gray-400 transition ease-in-out delay-150 duration-500">
 							{character.name}
 						</h1>
-						<button className="mt-2 bg-[#ec1d24] text-white font-semibold px-3 py-2 rounded-md btn">
-							Read more
+						<button
+							className="mt-2 bg-[#ec1d24] text-white font-semibold px-4 py-2 rounded-md btn"
+							onClick={() => setShow(true)}
+						>
+							View
 						</button>
 					</div>
 				</div>

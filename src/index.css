@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Abel", sans-serif;
-	background-color: #fafafa;
+	background-color: #ffffff;
 }
 
 h1,
@@ -31,8 +31,6 @@ span {
 	background-position: top center;
 	background-size: cover;
 	position: relative;
-	border-bottom-right-radius: 1rem;
-	border-bottom-left-radius: 1rem;
 }
 
 .content {
@@ -58,7 +56,12 @@ span {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	transition: all .5s ease;
 	-ms-transform: translate(-50%, -50%);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
 }
 
 .description {

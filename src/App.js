@@ -7,7 +7,7 @@ import "./App.css";
 const App = () => {
 	return (
 		<Router>
-			<div className="relative ">
+			<div className="relative">
 				<div className="min-h-screen pb-20">
 					<Header />
 					<Hero />

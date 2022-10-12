@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "../data/links";
 
+import logo from "../assets/images/logo.png";
+
 const Header = () => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
 	const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
@@ -12,20 +14,25 @@ const Header = () => {
 		? "fas fa-close fa-2x"
 		: "fas fa-bars fa-2x";
 
-	const right = showMobileMenu ? "0" : "100%";
+	const right = showMobileMenu ? "0" : "-100%";
+	const display = showMobileMenu ? "flex" : "hidden";
 
 	return (
 		<header className="fixed top-0 z-10 w-full h-20 bg-current">
 			<div className="container mx-auto h-full flex justify-between items-center gap-10">
 				<Link
 					to="/"
-					className="text-xl md:text-2xl lg:text-3xl px-5 rounded-sm font-extrabold bg-[#ec1d24] text-white h-full w-100 flex items-center"
+					className="flex items-center ml-3"
 					onClick={() => hideMobileMenu()}
 				>
-					ZAKA
+					<img
+						src={logo}
+						alt="Zaka Warriors"
+						className="w-12 h-12 md:h-16 md:w-16"
+					/>
 				</Link>
 				<nav
-					className={`flex flex-col absolute right-[${right}] top-20 bg-current p-3 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end`}
+					className={`${display} md:flex flex-col absolute  right-[${right}] top-20 bg-current p-3 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end`}
 				>
 					{links.map((link) => (
 						<Link

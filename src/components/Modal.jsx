@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./Modal.css";
 
 const Modal = ({ handleClose, id, show, name, description, image, width }) => {
+	useEffect(() => {
+		AOS.init();
+	});
+
 	const showHideClassName = show ? "modal display-block" : "modal display-none";
 	return (
 		<div className={showHideClassName}>
@@ -11,10 +19,14 @@ const Modal = ({ handleClose, id, show, name, description, image, width }) => {
 				</div>
 
 				<div className="body">
-					<div className="image-container">
+					<div
+						className="image-container"
+						data-aos="zoom-in"
+						data-aos-duration="1600"
+					>
 						<img src={image} alt={name} />
 					</div>
-					<div className="info">
+					<div className="info" data-aos="fade-up" data-aos-duration="1600">
 						<h3 className="uppercase font-bold text:lg md:text-xl">{name}</h3>
 						<p className="description">{description}</p>
 					</div>

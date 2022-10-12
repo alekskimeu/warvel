@@ -43,15 +43,17 @@ const App = () => {
 							/>
 							<i className="fas fa-search text-[#afafaf] cursor-pointer"></i>
 						</div>
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
-							{characters ? (
-								characters.map((character) => (
+						{characters.length > 0 ? (
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+								{characters.map((character) => (
 									<Character key={character.id} character={character} />
-								))
-							) : (
+								))}
+							</div>
+						) : (
+							<div>
 								<Loader />
-							)}
-						</div>
+							</div>
+						)}
 					</div>
 				</div>
 				<Footer />

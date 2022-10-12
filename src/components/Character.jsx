@@ -20,11 +20,11 @@ const Character = ({ character }) => {
 						className="rounded-t-xl h-full w-full object-cover transition ease-in-out delay-150 duration-500 hover:scale-110"
 					/>
 				</div>
-				<div className="px-4 py-5 transition ease-in-out delay-150 duration-500 group-hover:bg-black rounded-b-xl">
+				<div className="px-4 py-5 transition ease-in-out delay-150 duration-500 group-hover:bg-[#25262a] rounded-b-xl">
 					<h1 className="text-lg font-semibold mb-2 group-hover:text-white transition ease-in-out delay-150 duration-500">
 						{character.name}
 					</h1>
-					<p className="text-gray-700 text-lg line-clamp-2 description group-hover:text-white transition ease-in-out delay-150 duration-500">
+					<p className="text-gray-700 text-xl line-clamp-2 description group-hover:text-white transition ease-in-out delay-150 duration-500">
 						{character.description}...
 					</p>
 				</div>

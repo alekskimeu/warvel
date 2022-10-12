@@ -31,6 +31,8 @@ span {
 	background-position: top center;
 	background-size: cover;
 	position: relative;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
 }
 
 .content {

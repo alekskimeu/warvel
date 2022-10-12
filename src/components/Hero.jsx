@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<div className="hero">
-			<div className="container mx-auto flex flex-col items-center justify-center content gap-4">
+		<div className="hero p-3">
+			<div className="container mx-auto flex flex-col items-center justify-center content gap-4 p-3">
 				<h1 className="text-white font-bold text-center text-4xl uppercase">
 					Zaka Warriors
 				</h1>

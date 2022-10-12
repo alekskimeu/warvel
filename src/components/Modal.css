@@ -1,0 +1,92 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+.modal-main {
+	position: fixed;
+	background: #fafafa;
+	height: auto;
+	padding: 2rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.modal-main {
+		min-width: 80%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.modal-main {
+		min-width: 90%;
+	}
+}
+
+@media screen and (max-width: 624px) {
+	.modal-main {
+		min-width: 98%;
+	}
+}
+
+.display-block {
+	display: block;
+}
+
+.display-none {
+	display: none;
+}
+
+.modal-main .modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.modal-main .modal-header > i {
+	cursor: pointer;
+	color: var(--danger);
+	font-size: 1.5rem;
+}
+
+.modal-main .modal-header .title {
+	text-transform: uppercase;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.modal-main .body {
+	display: flex;
+	gap: 3rem;
+}
+
+.modal-main .body img {
+	width: 200px;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	-webkit-border-radius: 1;
+}
+
+
+.modal-main .body .description {
+    font-size: 1.2rem;
+}

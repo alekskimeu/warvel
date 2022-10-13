@@ -85,4 +85,39 @@ export const characters = [
 		description:
 			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
 	},
+	{
+		id: 13,
+		name: "Lorraine Nkatha",
+		img: image,
+		description:
+			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
+	},
+	{
+		id: 14,
+		name: "Losute Gladys",
+		img: image,
+		description:
+			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
+	},
+	{
+		id: 15,
+		name: "Kevin Aunga",
+		img: image,
+		description:
+			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
+	},
+	{
+		id: 17,
+		name: "Brian Makau",
+		img: image,
+		description:
+			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
+	},
+	{
+		id: 18,
+		name: "Losute Gladys",
+		img: image,
+		description:
+			"The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places. The world breaks everyone, and afterwards, many are strong at the broken places.",
+	},
 ];

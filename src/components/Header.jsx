@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { links } from "../data/links";
 
@@ -6,6 +6,8 @@ import logo from "../assets/images/logo.png";
 
 const Header = () => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
+	const [scroll, setScroll] = useState(false);
+
 	const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 
 	const hideMobileMenu = () => showMobileMenu && setShowMobileMenu(false);
@@ -16,13 +18,16 @@ const Header = () => {
 
 	const right = showMobileMenu ? "0" : "-100%";
 	const display = showMobileMenu ? "flex" : "hidden";
+	const background = scroll > 10 ? "black" : "transparent";
 
 	return (
-		<header className="fixed top-0 z-10 w-full h-20 bg-current">
-			<div className="container mx-auto h-full flex justify-between items-center gap-10">
+		<header className="fixed top-0 z-10 w-full h-20">
+			<div
+				className={`container mx-auto h-full flex justify-between items-center gap-10 bg-[${background}]`}
+			>
 				<Link
 					to="/"
-					className="flex items-center ml-3"
+					className="flex items-center pl-5 md:pl-0"
 					onClick={() => hideMobileMenu()}
 				>
 					<img
@@ -32,7 +37,7 @@ const Header = () => {
 					/>
 				</Link>
 				<nav
-					className={`${display} md:flex flex-col absolute  right-[${right}] top-20 bg-current p-3 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end`}
+					className={`${display} md:flex flex-col absolute right-[${right}] top-20 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end`}
 				>
 					{links.map((link) => (
 						<Link

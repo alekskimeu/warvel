@@ -17,15 +17,14 @@ const Character = ({ character }) => {
 		<>
 			<div
 				className="relative cursor-pointer group rounded-lg overflow-hidden drop-shadow-xl transition ease-in-out delay-150 duration-500 hover:drop-shadow-2xl"
-				data-aos="zoom-in"
-				data-aos-duration="1200"
+				data-aos="fade-up"
+				data-aos-duration="900"
 			>
 				<div className="h-60 overflow-hidden rounded-lg">
 					<img
-						// src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-						src={character.img}
+						src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
 						alt={character.name}
-						className="rounded-lg h-full w-100 object-cover transition ease-in-out delay-150 duration-500 group-hover:scale-110"
+						className="rounded-lg h-full w-full object-cover transition ease-in-out delay-150 duration-500 group-hover:scale-110"
 					/>
 				</div>
 				<div className="absolute top-0 left-0 right-0 bottom-0 h-full w-full opacity-0 group-hover:opacity-100 rounded-lg transition ease-in-out delay-150 duration-500 character-info">
@@ -47,7 +46,7 @@ const Character = ({ character }) => {
 				id={character.id}
 				name={character.name}
 				description={character.description}
-				image={character.img}
+				image={character.thumbnail}
 				handleClose={handleClose}
 			/>
 		</>

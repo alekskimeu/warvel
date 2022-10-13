@@ -22,13 +22,17 @@ const Modal = ({ handleClose, id, show, name, description, image, width }) => {
 					<div
 						className="image-container"
 						data-aos="zoom-in"
-						data-aos-duration="1600"
+						data-aos-duration="1000"
 					>
-						<img src={image} alt={name} />
+						<img src={`${image.path}.${image.extension}`} alt={name} />
 					</div>
 					<div className="info" data-aos="fade-up" data-aos-duration="1600">
 						<h3 className="uppercase font-bold text:lg md:text-xl">{name}</h3>
-						<p className="description">{description}</p>
+						<p className="description">
+							{description
+								? description
+								: "No description found for this character."}
+						</p>
 					</div>
 				</div>
 			</section>

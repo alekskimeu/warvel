@@ -70,13 +70,18 @@ Navigate to: http://localhist:3000
 
 ## Screenshots
 
-![Home](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Home
+![Home](https://raw.githubusercontent.com/alekskimeu/warvel/main/src/assets/screenshots/home.png)
 
-![Characters](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-![Character Hover](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Characters
+![Characters](https://raw.githubusercontent.com/alekskimeu/warvel/main/src/assets/screenshots/characters.png)
 
-![Character Details](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Character Hover
+![Character Hover](https://raw.githubusercontent.com/alekskimeu/warvel/main/src/assets/screenshots/character-hover.png)
+
+### Character Details
+![Character Details](https://raw.githubusercontent.com/alekskimeu/warvel/main/src/assets/screenshots/modal.png)
 ## Contributing
 
 Contributions are always welcome!

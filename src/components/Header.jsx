@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "../data/links";
 
@@ -6,7 +6,6 @@ import logo from "../assets/images/logo.png";
 
 const Header = () => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
-	const [scroll, setScroll] = useState(false);
 
 	const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 

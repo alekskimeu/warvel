@@ -18,12 +18,11 @@ const Header = () => {
 
 	const right = showMobileMenu ? "0" : "-100%";
 	const display = showMobileMenu ? "flex" : "hidden";
-	const background = scroll > 10 ? "black" : "transparent";
 
 	return (
-		<header className="fixed top-0 z-10 w-full h-20">
+		<header className="fixed top-0 z-10 w-full h-20 bg-current">
 			<div
-				className={`container mx-auto h-full flex justify-between items-center gap-10 bg-[${background}]`}
+				className={`container mx-auto h-full flex justify-between items-center gap-10`}
 			>
 				<Link
 					to="/"
@@ -37,7 +36,7 @@ const Header = () => {
 					/>
 				</Link>
 				<nav
-					className={`${display} md:flex flex-col absolute right-[${right}] top-20 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end`}
+					className={`${display} md:flex flex-col absolute right-[${right}] top-20 w-full h-screen justify-center items-center gap-10 md:flex-row md:static md:h-full md:justify-end bg-current`}
 				>
 					{links.map((link) => (
 						<Link

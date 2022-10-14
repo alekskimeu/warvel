@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/alekskimeu/warvel/main/src/assets/images/logo.png)
+![Logo](https://raw.githubusercontent.com/alekskimeu/warvel/main/public/favicon-32x32.png)
 
 # Warvel Characters
 

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
 
 import { Character, Loader } from ".";
@@ -9,20 +9,12 @@ const url = `
 `;
 
 const Characters = () => {
-	const [characters, setCharacters] = useState([]);
+	const { isLoading, data } = useQuery(
+		"data",
+		async () => await axios.get(url)
+	);
 
-	useEffect(() => {
-		const fetchCharacters = async () => {
-			try {
-				const response = await axios.get(url);
-				setCharacters(response.data.data.results);
-			} catch (error) {
-				console.log(error.message);
-			}
-		};
-
-		fetchCharacters();
-	}, [characters]);
+	const characters = !isLoading ? data.data.data.results : undefined;
 
 	return (
 		<section className="px-2 pt-10 pb-20">
@@ -45,9 +37,9 @@ const Characters = () => {
 					</Link>
 				</div>
 				<div className="flex flex-col items-center characters">
-					{characters.length > 0 ? (
+					{!isLoading ? (
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-3 mt-10 ">
-							{characters.map((character) => (
+							{characters?.map((character) => (
 								<Character key={character.id} character={character} />
 							))}
 						</div>

@@ -31,7 +31,7 @@ const Characters = () => {
 					</div>
 					<Link
 						to="/"
-						className="hidden md:flex items-center font-semibold border py-2 px-4 rounded-md text-gray-400 border-gray-400 hover:text-white hover:border-[#ec1d24] hover:bg-[#ec1d24] transition ease-in-out delay-150 duration-500"
+						className="hidden md:flex items-center font-semibold border py-2 px-4 rounded-md text-[#ec1d24] border-[#ec1d24] hover:text-white  hover:bg-[#ec1d24] transition ease-in-out delay-150 duration-500"
 					>
 						See All <i className="fas fa-arrow-right-long text-sm ml-1"></i>
 					</Link>

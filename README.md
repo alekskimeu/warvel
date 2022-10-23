@@ -56,7 +56,7 @@ Start the server
   npm start
 ```
 
-Navigate to: http://localhist:3000
+Navigate to: http://localhost:3000
 
 ## Screenshots
 

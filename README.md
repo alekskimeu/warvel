@@ -2,7 +2,7 @@
 
 # Warvel Characters
 
-Project done as part of take-home assessment for a Developer Role interview at Pezesha.
+Project done to play around with Marvel APIs.
 
 ## Authors
 
